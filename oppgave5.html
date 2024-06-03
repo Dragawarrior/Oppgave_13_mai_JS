@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="colorButton.js"></script>
+
+    <title>Task 5</title>
+</head>
+<body>
+    <ul>
+        <a href="index.html">
+            <li>Main Page</li>
+        </a>
+        <a href="oppgave4.html">
+            <li>Task 4</li>
+        </a>
+    </ul>
+    <h1>What you want by Two Door Cinema</h1>
+    <h2>Maybe Man by AJR</h2>
+    <h3>Spider by Melanie Martinez</h3>
+    <h4>Bit by Bit by Mother Mother</h4>
+    <p>Press the buttons to change the color of the titles!</p>
+    <button onclick="changeColor('h1', 'green')">Two Door Cinema</button>
+    <button onclick="changeColor('h2', 'orange')">AJR</button>
+    <button onclick="changeColor('h3', 'blue')">Melanie Martinez</button>
+    <button onclick="changeColor('h4', 'cyan')">Mother Mother</button>
+    <input type="text" id="textInputField" name="textInputField" oninput="updateField()">
+    <div id="liveUpdateField"></div>
+</body>
+</html>
